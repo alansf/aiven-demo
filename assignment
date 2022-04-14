@@ -1,0 +1,34 @@
+Aiven Solutions Architect Homework
+
+Please be ready to demo the solution in the possible interview later.
+To return your homework, store the code and related documentation on GitHub
+for easy access. Please send following information via email:
+
+● A link to the GitHub repository
+● if you ran out of time and you are returning a partial solution, description of what is missing and how you would continue
+
+Exercise
+It is common to create and handoff help articles or walkthroughs for customers that need help with certain technologies, issues, or features. Ideally these assets can be created once and used many times. This exercise is meant to evaluate your technical hands on and communication skills.
+
+The goal is to create a short tutorial for using Aiven Kafka. Please follow the instructions below and create a "Aiven Kafka Quickstart with <<X Framework>>" blog post or sample help article.
+
+Evaluation Criteria - Tutorial
+● Easy to follow instructions
+● Simple code snippets used appropriately
+● Screen shots used appropriately
+● Clean demo code
+
+Demo Application
+https://help.aiven.io/en/articles/489572-getting-started-with-aiven-kafka
+Your task is to create a Kafka service into Aiven and write a piece of code that produces valid JSON data to a topic in that service.
+
+The key should be a valid JSON string containing a random id, e.g. UUID, and the messagepayload should be a valid JSON object. The payload should be a mock "event" from an interesting use case, e.g. IoT sensor, stock tickets, or financial transactions. The event should include a timestamp represented by a string with the date in ISO 8601 format.
+
+The producer's data should be readable from the Aiven web console from the Kafka service view > Topics => Topic => Fetch Messages (Format: json)
+
+Integrations - Observability and Monitoring
+https://help.aiven.io/en/articles/489587-getting-started-with-aiven-grafana
+Next enable integrations from Kafka => InfluxDB => Grafana to gather metrics from your Kafka service.
+
+Writeup
+Create a blog like article that walks a semi-technical or technical employee through the process of working with Aiven Kafka and Observability. This can be in any format or tooling that you prefer, but please include it in the deliverables, e.g. markdown file + screenshots.

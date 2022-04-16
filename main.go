@@ -8,7 +8,13 @@ import (
     "github.com/Shopify/sarama"
 )
 
-func main() {
+func main() 
+	producer, err := newProducer()
+	if err != nil {
+		fmt.Println("Could not create producer: ", err)
+	}
+
+        {
     keypair, err := tls.LoadX509KeyPair("accesscert.cert", "accesskey.key")
     if err != nil {
         log.Println(err)

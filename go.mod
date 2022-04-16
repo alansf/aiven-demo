@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module github.com/tools/godep
 
 go 1.18
@@ -22,3 +23,6 @@ require (
 	golang.org/x/crypto v0.0.0-20220214200702-86341886e292 // indirect
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
 )
+=======
+go mod init https://github.com/alansf/aiven-demo
+>>>>>>> 4cf1234ffa9e2870b68846c1c91c936a672d218d

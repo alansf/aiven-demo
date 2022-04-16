@@ -9,13 +9,13 @@ import (
 )
 
 func main() {
-    keypair, err := tls.LoadX509KeyPair("my-kafka-service.cert", "my-kafka-service.key")
+    keypair, err := tls.LoadX509KeyPair("accesscert.cert", "accesskey.key")
     if err != nil {
         log.Println(err)
         return
     }
 
-    caCert, err := ioutil.ReadFile("my-aiven-project-ca.pem")
+    caCert, err := ioutil.ReadFile("cacert.ca")
     if err != nil {
         log.Println(err)
         return
@@ -36,7 +36,7 @@ func main() {
     config.Version = sarama.V0_10_2_0
 
     // init producer
-    brokers := []string{"my-kafka-service-my-aiven-project.aivencloud.com:12233"}
+    brokers := []string{"kafka-heroku-go-alanscott-ff29.aivencloud.com:17651"}
     producer, err := sarama.NewSyncProducer(brokers, config)
     if err != nil {
         panic(err)
